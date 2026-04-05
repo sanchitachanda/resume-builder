@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply font-sans;
+}
+
+/* Custom component styles */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply btn bg-blue-600 text-white hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.diff-added {
+  @apply bg-green-100 text-green-900;
+}
+
+.diff-removed {
+  @apply bg-red-100 text-red-900 line-through;
+}
+
+.score-box {
+  @apply text-center p-8 rounded-lg;
+}
+
+.score-excellent {
+  @apply bg-green-100 border-2 border-green-500;
+}
+
+.score-good {
+  @apply bg-blue-100 border-2 border-blue-500;
+}
+
+.score-fair {
+  @apply bg-yellow-100 border-2 border-yellow-500;
+}
+
+.score-poor {
+  @apply bg-red-100 border-2 border-red-500;
+}
+
+.drag-active {
+  @apply bg-blue-100 border-blue-500 border-2;
+}
